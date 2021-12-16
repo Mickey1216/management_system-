@@ -23,6 +23,10 @@ Vue.prototype.$API = API
 import CategorySelect from "@/components/CategorySelect";
 Vue.component(CategorySelect.name,CategorySelect)
 
+//引入HintButton全局组件
+import HintButton from '@/components/HintButton'
+Vue.component(HintButton.name,HintButton)
+
 if (process.env.NODE_ENV === 'production') {
   const { mockXHR } = require('../mock')
   mockXHR()
